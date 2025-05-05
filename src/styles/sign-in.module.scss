@@ -1,0 +1,113 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  &__container {
+    width: 416px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 3px 16px rgba(142, 134, 171, 0.05);
+    border-radius: 8px;
+  }
+  &__top {
+    background-color: #3f51b5;
+    padding: 24px;
+    text-align: center;
+    color: white;
+  }
+  &__heading {
+    font-size: 18px;
+    margin: 0 0 6px 0;
+  }
+  &__subheading {
+    font-size: 13px;
+    color: #ffffff;
+  }
+  &__form {
+    padding: 36px 24px;
+  }
+  &__label {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #656d9a;
+  }
+  input {
+    height: 38px;
+    border-radius: 8px;
+    border: 1px solid #e2e7f1;
+    padding: 8px 15px;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+    color: #c7c7c7;
+    font-family: vnMedium, sans-serif;
+    font-size: 12px;
+    &::placeholder {
+      color: #c7c7c7;
+      font-family: vnMedium, sans-serif;
+      font-size: 12px;
+    }
+  }
+  &__btn {
+    margin: 36px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    color: #000000;
+    font-size: 13px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #3f51b5;
+    padding: 8px 15px;
+    height: 38px;
+    font-family: vnMedium, sans-serif;
+    transition: 0.4s all;
+    gap: 8px;
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+  &__icon {
+    width: 20px;
+    aspect-ratio: 1 / 1;
+    background-image: url(../../public/icons8-login-64.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__error {
+    font-size: 13px;
+    color: #ef4d56;
+    margin: 0 0 8px 0;
+  }
+  &__success {
+    color: #22c55e;
+    margin: 0 0 8px 0;
+  }
+}
+
+.login__logoWrapper {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 1rem;
+}
+
+.login__logoImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.login__logoText {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
